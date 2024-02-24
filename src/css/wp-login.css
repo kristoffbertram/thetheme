@@ -1,0 +1,63 @@
+/**
+ * login.css
+ *
+ * A custom look for your login screen
+ * This file is watched by webpack.mix.js.
+ *
+ * @since 1.0.0
+ *
+ * Custom Styling for WP's login
+ */
+ @import "tailwindcss/components";
+ @import "tailwindcss/utilities";
+ 
+ /**
+  * Your custom styles
+  */ 
+ body.login {
+     
+     @apply bg-primary text-white;
+ 
+     /**
+      * The logo
+      */
+ 
+     h1 {
+ 
+         @apply mb-4;
+         
+         a {
+ 
+             @apply m-0;
+ 
+             /**
+              * Define Dimensions
+              */             
+ 
+         }
+ 
+     }
+ 
+     #login {
+ 
+         @apply p-8 w-96;
+ 
+         .message , 
+         .notice, 
+         .success {
+             @apply bg-white p-4 border-l-0 mb-2 shadow-none text-dark;
+         }
+ 
+         form {
+ 
+             @apply m-0 p-4 bg-white bg-opacity-10 border-none;
+ 
+             input[type="submit"] {
+                 @apply border-0 p-2 bg-dark text-white uppercase;
+             }
+ 
+         }
+ 
+     }
+ 
+ }

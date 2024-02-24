@@ -1,0 +1,36 @@
+/**
+ * The Theme Shared
+ *
+ * Any declarations here will be shared by both Gutenberg and your public front.
+ * This file is shared by theme.css and wp-editor-style.css
+ */
+.wp-block-cover {   
+}
+
+/* Gutenberg */
+.is-root-container > section.wp-block-group , 
+/* Site */
+main > section.wp-block-group {  
+
+}
+
+/**
+ * Your Custom Typography Styles for WP's common block types.
+ */
+
+h1 {
+    
+    
+}
+
+h2 {
+    
+}
+
+h3 {
+        
+}
+
+p {
+    @apply mb-4;
+}

@@ -1,0 +1,216 @@
+{
+    "version": 1,
+    "settings": {
+      "layout": {
+        "contentSize": "960px",
+        "wideSize": "1440px"
+      },
+      "spacing": {
+        "blockGap": true,
+        "spacingSizes": [
+          {
+            "size": "0.25rem",
+            "slug": "20",
+            "name": "0.25rem"
+          },
+          {
+            "size": "0.5rem",
+            "slug": "30",
+            "name": "0.5rem"
+          },
+          {
+            "size": "1rem",
+            "slug": "40",
+            "name": "1rem (Base)"
+          },
+          {
+            "size": "2rem",
+            "slug": "50",
+            "name": "2rem"
+          },
+          {
+            "size": "4rem",
+            "slug": "60",
+            "name": "4rem"
+          },
+          {
+            "size": "6rem",
+            "slug": "70",
+            "name": "6rem"
+          },
+          {
+            "size": "8rem",
+            "slug": "80",
+            "name": "8rem"
+          },
+          {
+            "size": "12rem",
+            "slug": "90",
+            "name": "12rem"
+          }
+        ],
+        "units": [ "rem","px","%"] ,
+        "margin": true,
+			  "padding": true
+      },
+      "border": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      },
+      "styles": {
+        "typography": {
+          "fontWeight": "400"
+        },
+        "spacing": {
+          "blockGap": "2rem"
+        },
+        "elements": {
+          "button": {
+            "typography": {
+              "fontWeight": "600",
+              "fontSize": "1rem"
+            },
+            "color": {
+              "background": "#222222",
+              "text": "#fff"
+            },
+            "border": {
+              "radius": "0",
+              "width": "2px",
+              "style": "solid"
+            }
+          }
+        }
+      },
+      "color": {
+        "customGradient": false,
+        "defaultPalette": false,
+        "defaultGradients": false,
+        "gradients": [
+          {
+            "slug": "horizontal-dark-left-to-transparent-right",
+            "gradient": "linear-gradient(90deg, #222222 0%, rgba(34,34,34,0.00) 100%)",
+            "name": "Horizontal Dark (left) to Transparent (right)"
+          } ,
+          {
+            "slug": "vertical-dark-bottom-to-transparent-top",
+            "gradient": "linear-gradient(0deg, #222222 0%, rgba(34,34,34,0.00) 50%)",
+            "name": "Vertical Dark (bottom) to Transparent (top 50%)"
+          }
+        ] ,
+        "palette": [
+          {
+            "name": "Brand",
+            "slug": "brand",
+            "color": "#12f"
+          },
+          {
+            "name": "Primary",
+            "slug": "primary",
+            "color": "#12f"
+          },
+          {
+            "name": "Secondary",
+            "slug": "secondary",
+            "color": "#222222"
+          },
+          {
+            "name": "Base",
+            "slug": "base",
+            "color": "#222222"
+          },
+          {
+            "name": "White",
+            "slug": "white",
+            "color": "#ffffff"
+          }          
+        ]
+      },
+      "typography": {
+        "fontFamilies": [
+          {
+            "fontFamily": "Inter",
+            "name": "Inter",
+            "slug": "inter"
+          }
+        ] ,
+        "letterSpacing": true,
+        "dropCap": false,
+        "lineHeight": true,
+        "fontSizes": [
+          {
+            "name": "2XS",
+            "slug": "2xs",
+            "size": "0.625rem"
+          },
+          {
+            "name": "XS (Extra Small)",
+            "slug": "xs",
+            "size": "0.75rem"
+          },
+          {
+            "name": "SM (Small)",
+            "slug": "sm",
+            "size": "0.875rem"
+          },
+          {
+            "name": "Base (Default)",
+            "slug": "base",
+            "size": "1rem"
+          },
+          {
+            "name": "LG (Large)",
+            "slug": "lg",
+            "size": "1.125rem"
+          },
+          {
+            "name": "XL (Extra Large)",
+            "slug": "XL",
+            "size": "1.25rem"
+          },
+          {
+            "name": "2XL",
+            "slug": "2xl",
+            "size": "1.5rem"
+          },
+          {
+            "name": "3XL",
+            "slug": "3xl",
+            "size": "1.875rem"
+          },
+          {
+            "name": "4XL",
+            "slug": "4xl",
+            "size": "2.25rem"
+          },
+          {
+            "name": "5XL",
+            "slug": "5xl",
+            "size": "3rem"
+          },
+          {
+            "name": "6XL",
+            "slug": "6xl",
+            "size": "3.75rem"
+          },
+          {
+            "name": "7XL",
+            "slug": "7xl",
+            "size": "4.5rem"
+          },
+          {
+            "name": "8XL",
+            "slug": "8xl",
+            "size": "6rem"
+          },
+          {
+            "name": "9XL",
+            "slug": "9xl",
+            "size": "8rem"
+          }
+        ]
+      }
+    }
+  }

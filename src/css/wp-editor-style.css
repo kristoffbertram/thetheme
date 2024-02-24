@@ -1,0 +1,46 @@
+/**
+ * The Theme Gutenberg Editor Style
+ *
+ * Custom Styling for WP's Gutenberg. This file contains both a mix of Shared (which is also shared to your public front)
+ * any visual aids you want to make available to your editors working in Gutenberg.
+ * This file is enqueued by thetheme_modules/editor.php and watched by webpack.mix.js.
+ * Do not remove this file unless you remove it from Theme Modules @editor.
+ * Do not remove any of the imports below.
+ *
+ * @since 1.0.0
+ * 
+ */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/**
+ * Your Custom & Shared Styles which are also made available to your theme.
+ */
+ @import url("shared.css");
+
+/**
+ * Your custom Gutenberg Visual Aids
+ * This is a matter of preference. Personally, I make a lot of use of the Group Block and its element selection. (<section>, <article>, ...)
+ * Adding a border to the element helps me distuingish while developing.
+ */
+section.wp-block-group {
+
+    @apply relative border-blue-100 border-dotted border-[1px];
+
+    &:before {
+        @apply absolute top-0 left-0 bg-blue-400 text-white p-2 text-xs font-sans;
+        content: "<section>";
+    }
+
+}
+
+/**
+ * Reset the page title inside Gutenberg so it feels like a field, rather than part of the document flow.
+ * (I understand it from a FSE-perspective but it never worked for me.)
+ */
+
+.edit-post-visual-editor__post-title-wrapper {
+
+    @apply font-sans;
+
+}

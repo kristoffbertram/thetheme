@@ -1,0 +1,79 @@
+/**
+ * The (Global) Theme Style
+ *
+ * Unless your preference is component based, define any Theme-only styles here.
+ * Do not remove the import below.
+ */
+@import url("shared.css");
+
+/**
+ * Your Custom Styles
+ */
+body {
+    
+    @apply bg-white overflow-x-hidden;
+
+}
+
+.all { 
+
+    & > header {
+    }
+
+    & > main {
+    }
+
+    & > footer {
+
+        
+
+    }
+
+}
+
+/**
+ * Silly WP Preset Overrides
+ * 
+ * To make up for the lack of responsive support in Gutenberg.
+ */
+
+ .wp-block-spacer {
+    margin: 0 !important;
+ }
+
+ body {
+    --wp--preset--font-size--2-xl: 1.25rem; /* Not halving this for legibility */
+    --wp--preset--font-size--6-xl: 1.875rem;
+    --wp--preset--font-size--9-xl: 4rem;
+    --wp--preset--spacing--50: 1rem;
+    --wp--preset--spacing--60: 2rem;
+    --wp--preset--spacing--70: 3rem;
+    --wp--preset--spacing--80: 4rem;
+    --wp--preset--spacing--90: 6rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        --wp--preset--font-size--2-xl: 1.5rem;
+        --wp--preset--font-size--6-xl: 2.8125rem;
+        --wp--preset--font-size--9-xl: 6rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 3rem;
+        --wp--preset--spacing--70: 4.5rem;
+        --wp--preset--spacing--80: 6rem;
+        --wp--preset--spacing--90: 9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        /* */
+        --wp--preset--font-size--6-xl: 3.75rem;
+        --wp--preset--font-size--9-xl: 8rem;
+        --wp--preset--spacing--50: 2rem;
+        --wp--preset--spacing--60: 4rem;
+        --wp--preset--spacing--70: 6rem;
+        --wp--preset--spacing--80: 8rem;
+        --wp--preset--spacing--90: 12rem;
+    }
+}
