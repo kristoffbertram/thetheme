@@ -38,8 +38,16 @@ section.wp-block-group {
  * Reset the page title inside Gutenberg so it feels like a field, rather than part of the document flow.
  * (I understand it from a FSE-perspective but it never worked for me.)
  */
-
 .edit-post-visual-editor__post-title-wrapper {
+
+    @apply font-sans;
+
+}
+
+/**
+ * Apply the default font to the editor.
+ */
+.editor-styles-wrapper * {
 
     @apply font-sans;
 
