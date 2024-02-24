@@ -22,6 +22,12 @@ Refer to thetheme_modules/images.php or thetheme-functions.php for more informat
 
 ### Theme CSS & JS
 
+First, run:
+
+```
+npm install
+```
+
 The Theme is set up to enqueue app.css and app.js.  
 To get started, open the contents of /src/css and /src/js/ and run the command below.  
 Your built files will appear in ~/css/ and ~/js/.
