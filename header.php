@@ -1,3 +1,13 @@
+<?php
+/**
+ * The Theme Header
+ * 
+ * @since 1.0.0
+ * 
+ * Sets the @thetheme <html> headers and
+ * injects the header template parts
+ */
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -11,9 +21,11 @@
 <?php wp_head(); ?>
 </head>
 <?php
+// Add any targeting conditionals to your <body>
 $body_class = '';
+// For post (and not page) types
 if ('post' === get_post_type()) {
-    $body_class = 'post-type-post'; // This body class is used both Gutenberg and allows us to target it along with our public facing front.
+    $body_class = 'post-type-post';
 }
 ?>
 <body <?php body_class($body_class); ?>>

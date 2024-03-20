@@ -6,7 +6,7 @@
  * 
  * Useful functions and overrides to WordPress. 
  * While you can modify this file to your own preference, 
- * it is strongly advised to use thetheme-functions.php instead.
+ * it is advised to use thetheme-functions.php
  */
 function thetheme_includes() {
 

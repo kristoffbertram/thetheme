@@ -1,6 +1,6 @@
 # The Theme (thetheme)
 
-_1.0.0_
+_1.0.1_
 
 This is my noble attempt at a as-versatile-as-possible Best Practices Boilerplate WordPress Theme using Tailwind. It offers a build-process, sets up certain "enhancements" to WordPress, and using Advanced Custom Fields; offers a bullet-proof technique of adding custom blocks.  
 

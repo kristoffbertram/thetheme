@@ -87,10 +87,18 @@ define( 'DISALLOW_FILE_EDIT', true );
 
 /**
  * Disable XMLRPC
+ * If you require XMLRPC, be sure to remove the corresponding header as well
  * 
  * @since 1.0.0
  */
 add_filter('xmlrpc_enabled', '__return_false');
+
+function the_remove_x_pingback_header($headers) {
+
+    unset($headers['X-Pingback']);
+    return $headers;
+}
+add_filter('wp_headers', 'the_remove_x_pingback_header');
 
 /**
  * Disable REST access to authed users only.
@@ -129,3 +137,42 @@ if (!is_admin()) {
     add_filter('template_redirect', 'thetheme_redirect_author_archive_to_homepage');
 
 }
+
+/**
+ * If we're using the default s parameter, if an array is passed, it can cause plugins to act up. This cleans it up.
+ * 
+ * @since 1.0.0
+ */
+add_filter('request', function ($query_vars) {
+    if (isset($query_vars['s']) && is_array($query_vars['s'])) {
+        $query_vars['s'] = implode(" ", $query_vars['s']);
+    }
+    return $query_vars;
+});
+
+/**
+ * Custom security headers
+ */
+
+function the_custom_security_headers() {
+    
+    // Referrer Policy
+    header("Referrer-Policy: no-referrer-when-downgrade");
+
+    // HTTP Strict Transport Security (HSTS)
+    header("Strict-Transport-Security: max-age=31536000; includeSubDomains");
+
+    // Content Security Policy (CSP) - Be very careful with the rules you set here as they can break your site
+    // header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';");
+
+    // X-Frame-Options
+    header("X-Frame-Options: SAMEORIGIN");
+
+    // X-Content-Type-Options
+    header("X-Content-Type-Options: nosniff");
+
+    // Permissions Policy (previously Feature Policy)
+    // Example: Disable geolocation and fullscreen for all origins, adjust as needed
+    header("Permissions-Policy: geolocation=(), fullscreen=()");
+}
+add_action('send_headers', 'the_custom_security_headers');
