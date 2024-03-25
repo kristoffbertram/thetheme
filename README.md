@@ -61,3 +61,4 @@ Upgrade by downloading thetheme-core.
 
 * Fix Tailwind font loading.
 * Better overriding of WP's Gutenberg Presets.
+* 
