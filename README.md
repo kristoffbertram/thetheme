@@ -28,8 +28,8 @@ First, run:
 npm install
 ```
 
-The Theme is set up to enqueue ``app.css`` and ``app.js``.  
-To get started, open the contents of ``/src`/css`` and ``/src/js/`` and run the command below.  
+The Theme is set up to enqueue ``app.css`` and ``app.js``. Refer to ``~/thetheme_modules/enqueue.php`` for its precise use.
+To get started, open the contents of ``/src/css`` and ``/src/js/`` and run the command below.  
 Your built files will appear in ``~/css/`` and ``~/js/``.
 
 ```
@@ -50,15 +50,14 @@ You can optionally add its required CSS or JS files to your build process in web
 mix.postCss("blocks/your-block/your-block.css", "css");
 ```
 
-See thetheme_modules/acf.php for more information.  
+See ``~/thetheme_modules/acf.php`` for more information.  
 Two sample blocks (``Card`` and ``Wrapper``) are included to get you started.
 
 ## Upgrading
 
-Upgrade by downloading thetheme-core.
+Upgrade by downloading thetheme-core at https://github.com/kristoffbertram/thetheme-core.
 
 ## TODO
 
 * Fix Tailwind font loading.
 * Better overriding of WP's Gutenberg Presets.
-* 
