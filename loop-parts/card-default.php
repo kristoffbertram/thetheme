@@ -2,9 +2,20 @@
 /**
  * A sample Card, which is both in use as a Block and Loop Part.
  */
+
+$image_id = get_post_thumbnail_id( get_the_ID() );
+$size = '43-sm';
 ?>
 
-<a class="block-card default">
+<a class="card default" <?php if (!is_admin()): ?> href="<?php the_permalink(); ?>"<?php endif; ?>>
+
+    <div class="card-image">
+
+        <?php
+        thetheme_image( $image_id , $size );
+        ?>
+
+    </div>
 
     <div class="card-content">
 

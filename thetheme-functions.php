@@ -42,9 +42,9 @@ $new_mimes = [
 new The_Theme_Allow_Custom_Mimes($new_mimes);
 
 /**
- * Site Menus
+ * Site Menu
+ * This is optional and used in ~/template-parts/header.php
  */
 register_nav_menus( array(
-    'primary' => __( 'Primary', 'the_theme' ) ,
-    'secondary' => __( 'Secondary', 'the_theme' ) ,
+    'primary' => __( 'Primary', 'the_theme' )
 ));

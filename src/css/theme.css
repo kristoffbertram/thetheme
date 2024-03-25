@@ -15,26 +15,11 @@ body {
 
 }
 
-.all { 
-
-    & > header {
-    }
-
-    & > main {
-    }
-
-    & > footer {
-
-        
-
-    }
-
-}
-
 /**
  * Silly WP Preset Overrides
  * 
  * To make up for the lack of responsive support in Gutenberg.
+ * The font-sizes attempt to match Tailwind's.
  */
 
  .wp-block-spacer {

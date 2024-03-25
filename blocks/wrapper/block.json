@@ -1,0 +1,15 @@
+{
+    "name": "acf/wrapper",
+    "title": "Wrapper",
+    "description": "",
+    "category": "formatting",
+    "icon": "aside",
+    "keywords": ["wrapper"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "wrapper.php"
+    },
+    "supports": {
+        "align": true
+    }
+}

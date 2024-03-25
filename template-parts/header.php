@@ -5,7 +5,6 @@
 		<?php
 		/**
 		 * TODO
-		 * 
 		 * The Site Logo
 		 */
 		?>

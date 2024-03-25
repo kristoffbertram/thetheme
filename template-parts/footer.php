@@ -1,7 +1,3 @@
-    <footer>
-
-        
-
-    </footer>
+    <footer></footer>
 
 </div>
