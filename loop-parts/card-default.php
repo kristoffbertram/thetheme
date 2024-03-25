@@ -12,7 +12,7 @@ $size = '43-sm';
     <div class="card-image">
 
         <?php
-        thetheme_image( $image_id , $size );
+        echo thetheme_image( $image_id , $size );
         ?>
 
     </div>
